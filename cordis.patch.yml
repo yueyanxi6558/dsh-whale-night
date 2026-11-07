@@ -1,0 +1,4 @@
+# 鲸眠夜（whale-night）的 cordis 补丁：把本插件插进当前 profile 的插件表。
+- insert:
+    - id: whale-night
+      name: dsh-whale-night

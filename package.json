@@ -1,0 +1,44 @@
+{
+  "name": "dsh-whale-night",
+  "version": "1.0.0",
+  "displayName": "鲸眠夜 · Whale Night",
+  "description": "鲸眠夜：把一段夜灯鲸鱼小电影做成 DeepSeek Harness 的主题背景，并给背景音乐配一个独立开关。",
+  "icon": "icon.svg",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "assets",
+    "cordis.patch.yml",
+    "icon.svg",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "theme",
+    "video-background",
+    "background-music"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}
